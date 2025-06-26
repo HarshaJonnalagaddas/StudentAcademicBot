@@ -7,7 +7,6 @@ from gemini_client import get_academic_guidance, get_college_recommendations, ge
 
 # Utility function to load JSON data
 def load_json_data(filename):
-    """Load JSON data from the data directory"""
     try:
         with open(os.path.join('data', filename), 'r') as f:
             return json.load(f)
@@ -20,24 +19,21 @@ def load_json_data(filename):
 
 @app.route('/')
 def index():
-    """Main chatbot interface"""
     return render_template('index.html')
 
 @app.route('/colleges')
 def colleges():
-    """College search and information page"""
+
     colleges_data = load_json_data('colleges.json')
     return render_template('colleges.html', colleges=colleges_data.get('colleges', []))
 
 @app.route('/resources')
 def resources():
-    """Academic resources and study materials page"""
     resources_data = load_json_data('resources.json')
     return render_template('resources.html', resources=resources_data)
 
 @app.route('/api/chat', methods=['POST'])
 def chat_api():
-    """Chat API endpoint for processing user messages with Gemini integration"""
     try:
         data = request.get_json()
         user_message = data.get('message', '').strip()
@@ -101,20 +97,17 @@ def find_best_response(message, responses):
     return responses.get('default', {}).get('response', 'I\'m here to help with your academic questions! Try asking about colleges, courses, or career guidance.')
 
 def get_suggestions(message, responses):
-    """Get suggested follow-up questions"""
     suggestions = []
     for category, data in responses.items():
         if category in ['keywords', 'default']:
             continue
         suggestions.extend(data.get('suggestions', []))
     
-    # Return up to 3 random suggestions
     import random
     return random.sample(suggestions, min(3, len(suggestions))) if suggestions else []
 
 @app.route('/api/colleges/search', methods=['GET'])
 def search_colleges():
-    """API endpoint for college search with optional AI recommendations"""
     try:
         query = request.args.get('q', '').lower()
         location = request.args.get('location', '').lower()
@@ -123,7 +116,6 @@ def search_colleges():
         colleges_data = load_json_data('colleges.json')
         colleges = colleges_data.get('colleges', [])
         
-        # Filter colleges based on search criteria
         filtered_colleges = []
         for college in colleges:
             # Check if college matches search criteria
@@ -163,7 +155,7 @@ def search_colleges():
 
 @app.route('/api/college/<int:college_id>')
 def get_college_details(college_id):
-    """Get detailed information about a specific college"""
+
     try:
         colleges_data = load_json_data('colleges.json')
         colleges = colleges_data.get('colleges', [])
@@ -181,7 +173,6 @@ def get_college_details(college_id):
 
 @app.route('/api/career-guidance', methods=['POST'])
 def career_guidance_api():
-    """API endpoint for career guidance using Gemini"""
     try:
         data = request.get_json()
         major_or_interests = data.get('major_or_interests', '').strip()
