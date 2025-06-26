@@ -20,13 +20,11 @@ class ChatInterface {
     }
 
     setupEventListeners() {
-        // Form submission
         this.chatForm.addEventListener('submit', (e) => {
             e.preventDefault();
             this.handleSendMessage();
         });
 
-        // Enter key handling
         this.messageInput.addEventListener('keydown', (e) => {
             if (e.key === 'Enter' && !e.shiftKey) {
                 e.preventDefault();
@@ -34,15 +32,11 @@ class ChatInterface {
             }
         });
 
-        // Input focus handling
         this.messageInput.addEventListener('focus', () => {
             this.hideWelcomeMessage();
         });
-
-        // Quick suggestion buttons
         this.setupQuickSuggestions();
 
-        // Auto-resize textarea (if needed in future)
         this.messageInput.addEventListener('input', () => {
             this.adjustInputHeight();
         });
@@ -85,31 +79,25 @@ class ChatInterface {
             return;
         }
 
-        // Add user message to chat
+    
         this.addMessage(message, 'user');
         
-        // Clear input
+
         this.messageInput.value = '';
         this.adjustInputHeight();
         
-        // Show typing indicator
+ 
         this.showTypingIndicator();
         
         try {
-            // Send message to backend
+  
             const response = await this.sendMessageToBot(message);
             
-            // Hide typing indicator
             this.hideTypingIndicator();
             
             if (response.success) {
-                // Add bot response
                 this.addMessage(response.data.response, 'bot');
-                
-                // Update AI status indicator
                 this.updateAiStatusIndicator(response.data.source);
-                
-                // Update suggestions if provided
                 if (response.data.suggestions && response.data.suggestions.length > 0) {
                     this.updateQuickSuggestions(response.data.suggestions);
                 }
@@ -121,8 +109,6 @@ class ChatInterface {
             this.hideTypingIndicator();
             this.addMessage('I\'m experiencing technical difficulties. Please try again in a moment.', 'bot');
         }
-
-        // Scroll to bottom
         this.scrollToBottom();
     }
 
@@ -154,50 +140,43 @@ class ChatInterface {
         // Hide welcome message when first real message is added
         this.hideWelcomeMessage();
         
-        // Add to chat
         this.chatMessages.appendChild(messageDiv);
         
-        // Store in history
+        
         this.messageHistory.push({
             content: content,
             sender: sender,
             timestamp: timestamp || new Date().toISOString()
         });
         
-        // Scroll to bottom
+
         this.scrollToBottom();
         
-        // Add animation
         messageDiv.classList.add('slide-up');
     }
 
     formatMessageContent(content, sender) {
         if (sender === 'bot') {
-            // Add bot icon
             content = `<i class="fas fa-robot me-2"></i>${content}`;
             
-            // Convert URLs to links
             content = content.replace(/(https?:\/\/[^\s]+)/g, '<a href="$1" target="_blank" class="text-primary">$1</a>');
             
-            // Convert markdown-style bold text
+
             content = content.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
             
-            // Convert markdown-style italic text
+
             content = content.replace(/\*(.*?)\*/g, '<em>$1</em>');
             
-            // Convert numbered lists
             content = content.replace(/(\d+\.\s.*?)(?=\n\d+\.\s|\n\n|$)/g, '<li>$1</li>');
             if (content.includes('<li>')) {
                 content = content.replace(/(<li>.*<\/li>)/g, '<ol>$1</ol>');
             }
             
-            // Convert bullet points
             content = content.replace(/•\s(.*?)(?=\n•|\n\n|$)/g, '<li>$1</li>');
             if (content.includes('<li>') && !content.includes('<ol>')) {
                 content = content.replace(/(<li>.*<\/li>)/g, '<ul>$1</ul>');
             }
             
-            // Convert line breaks to paragraphs
             content = content.replace(/\n\n/g, '</p><p>');
             if (content.includes('</p><p>')) {
                 content = '<p>' + content + '</p>';
@@ -230,8 +209,7 @@ class ChatInterface {
         this.hideWelcomeMessage();
         this.chatMessages.appendChild(typingDiv);
         this.scrollToBottom();
-        
-        // Disable send button
+    
         this.sendButton.disabled = true;
         this.sendButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
     }
@@ -244,7 +222,7 @@ class ChatInterface {
         
         this.isTyping = false;
         
-        // Re-enable send button
+
         this.sendButton.disabled = false;
         this.sendButton.innerHTML = '<i class="fas fa-paper-plane"></i>';
     }
@@ -264,10 +242,8 @@ class ChatInterface {
         const suggestionContainer = this.quickSuggestions.querySelector('.d-flex');
         if (!suggestionContainer) return;
         
-        // Clear existing suggestions
         suggestionContainer.innerHTML = '';
         
-        // Add new suggestions
         suggestions.forEach(suggestion => {
             const button = document.createElement('button');
             button.className = 'btn btn-outline-primary btn-sm suggestion-btn';
@@ -283,7 +259,6 @@ class ChatInterface {
         });
     }
 
-    // Public methods for external use
     clearChat() {
         this.chatMessages.innerHTML = '';
         this.messageHistory = [];
@@ -326,13 +301,11 @@ class ChatInterface {
     }
 
     checkForPrefilledMessage() {
-        // Check if there's a career guidance request in the URL hash
         const hash = window.location.hash;
         if (hash.startsWith('#career-guidance:')) {
             const major = decodeURIComponent(hash.substring('#career-guidance:'.length));
             this.messageInput.value = `I'm interested in ${major}. Can you provide career guidance for this field?`;
-            window.location.hash = ''; // Clear the hash
-            // Auto-send the message after a short delay
+            window.location.hash = '';
             setTimeout(() => {
                 this.handleSendMessage();
             }, 1000);
@@ -350,12 +323,10 @@ class ChatInterface {
     }
 }
 
-// Initialize chat interface when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     if (document.getElementById('chatMessages')) {
         window.chatInterface = new ChatInterface();
     }
 });
 
-// Export for global access
 window.ChatInterface = ChatInterface;
