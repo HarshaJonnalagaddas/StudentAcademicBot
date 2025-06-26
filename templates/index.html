@@ -1,0 +1,205 @@
+{% extends "base.html" %}
+
+{% block title %}Chat - AcademicBot{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section bg-gradient-primary text-white py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="display-4 fw-bold mb-4">
+                    Welcome to AcademicBot
+                </h1>
+                <p class="lead mb-4">
+                    Your intelligent academic guidance assistant. Get personalized advice on colleges, 
+                    courses, career paths, and academic planning.
+                </p>
+                <div class="d-flex gap-3 mb-4">
+                    <div class="feature-item">
+                        <i class="fas fa-university text-warning me-2"></i>
+                        <span>College Search</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-graduation-cap text-warning me-2"></i>
+                        <span>Career Guidance</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-book-open text-warning me-2"></i>
+                        <span>Study Resources</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="chat-preview-card">
+                    <div class="card shadow-lg border-0">
+                        <div class="card-header bg-primary text-white">
+                            <i class="fas fa-robot me-2"></i>AcademicBot Assistant
+                        </div>
+                        <div class="card-body">
+                            <div class="preview-message bot-message">
+                                <i class="fas fa-robot me-2"></i>
+                                Hi! I'm here to help with your academic journey. Ask me about colleges, courses, or career advice!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Chat Interface -->
+<section class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="chat-container">
+                    <div class="card shadow-lg border-0">
+                        <div class="card-header bg-primary text-white d-flex align-items-center">
+                            <i class="fas fa-comments me-2"></i>
+                            <span class="fw-semibold">Chat with AcademicBot</span>
+                            <div class="ms-auto">
+                                <span class="badge bg-success">
+                                    <i class="fas fa-circle me-1" style="font-size: 0.6em;"></i>
+                                    Online
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="card-body p-0">
+                            <!-- Chat Messages Area -->
+                            <div id="chatMessages" class="chat-messages">
+                                <div class="welcome-message">
+                                    <div class="text-center py-4">
+                                        <i class="fas fa-graduation-cap text-primary mb-3" style="font-size: 3rem;"></i>
+                                        <h5 class="text-primary mb-2">Welcome to AcademicBot!</h5>
+                                        <p class="text-muted mb-3">I'm here to help you with:</p>
+                                        <div class="row g-2">
+                                            <div class="col-md-4">
+                                                <div class="quick-topic">
+                                                    <i class="fas fa-university text-primary me-2"></i>
+                                                    College Information
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="quick-topic">
+                                                    <i class="fas fa-route text-success me-2"></i>
+                                                    Career Guidance
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="quick-topic">
+                                                    <i class="fas fa-book text-info me-2"></i>
+                                                    Study Resources
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Quick Suggestions -->
+                            <div id="quickSuggestions" class="quick-suggestions p-3 border-top">
+                                <div class="d-flex flex-wrap gap-2">
+                                    <button class="btn btn-outline-primary btn-sm suggestion-btn" data-message="What are the top engineering colleges?">
+                                        <i class="fas fa-cog me-1"></i>Top Engineering Colleges
+                                    </button>
+                                    <button class="btn btn-outline-success btn-sm suggestion-btn" data-message="How do I choose the right major?">
+                                        <i class="fas fa-compass me-1"></i>Choose Right Major
+                                    </button>
+                                    <button class="btn btn-outline-info btn-sm suggestion-btn" data-message="What are the admission requirements?">
+                                        <i class="fas fa-clipboard-list me-1"></i>Admission Requirements
+                                    </button>
+                                    <button class="btn btn-outline-warning btn-sm suggestion-btn" data-message="Tell me about scholarship opportunities">
+                                        <i class="fas fa-dollar-sign me-1"></i>Scholarships
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-footer bg-light">
+                            <form id="chatForm" class="d-flex gap-2">
+                                <div class="input-group">
+                                    <input type="text" 
+                                           id="messageInput" 
+                                           class="form-control" 
+                                           placeholder="Ask me anything about academics, colleges, or career guidance..."
+                                           autocomplete="off">
+                                    <button type="submit" class="btn btn-primary" id="sendButton">
+                                        <i class="fas fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="text-muted small mt-2">
+                                <i class="fas fa-info-circle me-1"></i>
+                                <span id="aiStatus">Powered by AI • Press Enter to send</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col-12">
+                <h2 class="fw-bold text-dark mb-3">How AcademicBot Can Help You</h2>
+                <p class="text-muted">Discover the comprehensive academic guidance features</p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="feature-card h-100">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-search text-primary"></i>
+                            </div>
+                            <h5 class="fw-semibold mb-3">College Search</h5>
+                            <p class="text-muted">Find the perfect college based on your preferences, location, and academic goals.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="feature-card h-100">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-route text-success"></i>
+                            </div>
+                            <h5 class="fw-semibold mb-3">Career Guidance</h5>
+                            <p class="text-muted">Get personalized career advice and explore different academic paths.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="feature-card h-100">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-calendar-alt text-info"></i>
+                            </div>
+                            <h5 class="fw-semibold mb-3">Academic Planning</h5>
+                            <p class="text-muted">Stay on track with deadlines, course planning, and academic milestones.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+{% endblock %}
