@@ -1,0 +1,304 @@
+{
+  "colleges": [
+    {
+      "id": 1,
+      "name": "Indian Institute of Technology Bombay",
+      "location": "Mumbai, Maharashtra",
+      "type": "public",
+      "description": "IIT Bombay is a premier engineering and research institution in India, renowned for its rigorous academics, cutting‑edge research, and vibrant campus culture.",
+      "students": "10,000",
+      "acceptance_rate": 1.8,
+      "ranking": "#3 (NIRF Engineering)",
+      "popular_programs": ["Computer Science", "Electrical Engineering", "Mechanical Engineering", "Aerospace Engineering", "Data Science"],
+      "admission_requirements": [
+        "JEE Advanced rank in top ~2,500",
+        "Strong 10+2 board exam scores",
+        "Counseling via JoSAA",
+        "Category certificates (if applicable)"
+      ],
+      "tuition": "₹2 00 000 per year",
+      "financial_aid": "Merit‑cum‑means scholarships and fee waivers",
+      "website": "https://www.iitb.ac.in"
+    },
+    {
+      "id": 2,
+      "name": "Indian Institute of Technology Delhi",
+      "location": "New Delhi, Delhi",
+      "type": "public",
+      "description": "IIT Delhi is a top national engineering institute known for its excellence in technology education, interdisciplinary research, and entrepreneurship.",
+      "students": "8,500",
+      "acceptance_rate": 1.7,
+      "ranking": "#2 (NIRF Engineering)",
+      "popular_programs": ["Computer Science", "Electronics", "Civil Engineering", "Biotechnology", "MBA"],
+      "admission_requirements": [
+        "JEE Advanced rank in top ~2,200",
+        "Strong 10+2 marks",
+        "JoSAA counseling",
+        "Category documentation"
+      ],
+      "tuition": "₹2 00 000 per year",
+      "financial_aid": "Need‑based grants, scholarships",
+      "website": "https://home.iitd.ac.in"
+    },
+    {
+      "id": 3,
+      "name": "Indian Institute of Science",
+      "location": "Bengaluru, Karnataka",
+      "type": "public",
+      "description": "IISc Bengaluru is India's leading institution for advanced scientific and technological research and postgraduate education.",
+      "students": "4,000",
+      "acceptance_rate": 1.5,
+      "ranking": "#1 (NIRF Overall)",
+      "popular_programs": ["Biological Sciences", "Engineering", "Physics", "Chemical Sciences", "Materials Science"],
+      "admission_requirements": [
+        "Entrance via GATE/UGC‑NET/JEST/CUET",
+        "Strong academic record",
+        "Interviews for PhD",
+        "Research proposal (for doctoral programs)"
+      ],
+      "tuition": "₹1 50 000 per year",
+      "financial_aid": "Fellowships, assistantships",
+      "website": "https://www.iisc.ac.in"
+    },
+    {
+      "id": 4,
+      "name": "All India Institute of Medical Sciences (AIIMS) Delhi",
+      "location": "New Delhi, Delhi",
+      "type": "public",
+      "description": "AIIMS Delhi is the premier medical institution in India, offering top‑tier medical education, research, and patient care.",
+      "students": "8,000",
+      "acceptance_rate": 0.3,
+      "ranking": "#1 (NIRF Medical)",
+      "popular_programs": ["MBBS", "MD/MS", "BSc Nursing", "MSc", "PhD"],
+      "admission_requirements": [
+        "NEET‑UG rank within top ~1,00,000",
+        "High school science stream",
+        "NEET scorecard",
+        "Counselling via MCC"
+      ],
+      "tuition": "₹1,00,000 per year (approx.)",
+      "financial_aid": "Fee concessions and scholarships",
+      "website": "https://www.aiims.edu"
+    },
+    {
+      "id": 5,
+      "name": "University of Delhi",
+      "location": "Delhi, Delhi",
+      "type": "public",
+      "description": "University of Delhi is one of India's top universities, offering a wide range of undergrad and postgrad programs across arts, science, commerce, and law.",
+      "students": "4,50,000",
+      "acceptance_rate": 15,
+      "ranking": "#12 (NIRF Overall)",
+      "popular_programs": ["Economics", "Commerce", "Sociology", "Political Science", "English"],
+      "admission_requirements": [
+        "CUET UG score",
+        "High school percentage (≥90%)",
+        "Subject‑specific cutoffs per college",
+        "Reservation criteria"
+      ],
+      "tuition": "₹8,000–₹40,000 per year (varying by college)",
+      "financial_aid": "Merit & need‑based scholarships",
+      "website": "http://www.du.ac.in"
+    },
+    {
+      "id": 6,
+      "name": "Indian Institute of Technology Madras",
+      "location": "Chennai, Tamil Nadu",
+      "type": "public",
+      "description": "IIT Madras is a top-tier IIT, known for its strong engineering programs, research output, and vibrant startup ecosystem.",
+      "students": "9,000",
+      "acceptance_rate": 2.0,
+      "ranking": "#4 (NIRF Engineering)",
+      "popular_programs": ["Mechanical", "Electrical", "Aerospace", "Computer Science", "Chemical Engineering"],
+      "admission_requirements": [
+        "JEE Advanced rank in top ~3,000",
+        "10+2 performance",
+        "JoSAA counseling",
+        "Category certificates"
+      ],
+      "tuition": "₹2 00 000 per year",
+      "financial_aid": "Fee waivers, scholarships",
+      "website": "https://www.iitm.ac.in"
+    },
+    {
+      "id": 7,
+      "name": "Birla Institute of Technology and Science, Pilani",
+      "location": "Pilani, Rajasthan",
+      "type": "private",
+      "description": "BITS Pilani is a leading private technical university with a flexible academic structure and emphasis on innovation and industry readiness.",
+      "students": "11,000",
+      "acceptance_rate": 22,
+      "ranking": "#7 (NIRF Engineering)",
+      "popular_programs": ["Electronics", "Computer Science", "Chemical Engineering", "Economics", "Pharmacy"],
+      "admission_requirements": [
+        "BITSAT exam score",
+        "10+2 performance",
+        "Boards dependent eligibility",
+        "Personal interview (selected students)"
+      ],
+      "tuition": "₹4 00 000 per year",
+      "financial_aid": "Merit scholarships and loans",
+      "website": "https://www.bits-pilani.ac.in"
+    },
+    {
+      "id": 8,
+      "name": "National Institute of Technology Tiruchirappalli",
+      "location": "Tiruchirappalli, Tamil Nadu",
+      "type": "public",
+      "description": "NIT Trichy is one of India's top NITs, known for its strong engineering, architecture, and science programs.",
+      "students": "8,500",
+      "acceptance_rate": 8,
+      "ranking": "#8 (NIRF Engineering)",
+      "popular_programs": ["Civil Engineering", "Mechanical", "Computer Science", "Electrical", "Architecture"],
+      "admission_requirements": [
+        "JEE Main rank",
+        "JoSAA counselling",
+        "10+2 board results",
+        "Category certificates"
+      ],
+      "tuition": "₹1,50,000 per year",
+      "financial_aid": "Merit and need‑based scholarships",
+      "website": "https://www.nitt.edu"
+    },
+    {
+      "id": 9,
+      "name": "Indian Institute of Management Ahmedabad",
+      "location": "Ahmedabad, Gujarat",
+      "type": "public",
+      "description": "IIM Ahmedabad is India's top business school offering world-class management education, research, and executive programs.",
+      "students": "1,200",
+      "acceptance_rate": 1.5,
+      "ranking": "#1 (NIRF Management)",
+      "popular_programs": ["MBA", "PGPX", "FPM", "PGDM", "Executive Education"],
+      "admission_requirements": [
+        "CAT score ≥ 99 percentile",
+        "Work experience (2–6 years)",
+        "Academic record",
+        "Personal Interview and Written Ability Test"
+      ],
+      "tuition": "₹23 00,000 for PGP",
+      "financial_aid": "Merit scholarships and loans",
+      "website": "https://www.iima.ac.in"
+    },
+    {
+      "id": 10,
+      "name": "Indian Institute of Management Bangalore",
+      "location": "Bengaluru, Karnataka",
+      "type": "public",
+      "description": "IIM Bangalore is a top management institute known for its flagship MBA program, research, and global partnerships.",
+      "students": "1,500",
+      "acceptance_rate": 2.0,
+      "ranking": "#2 (NIRF Management)",
+      "popular_programs": ["MBA", "PGPpro", "PGDM", "MBA‑HR", "Executive Programs"],
+      "admission_requirements": [
+        "CAT score ≥ 98 percentile",
+        "Work experience preferred",
+        "Academic record",
+        "PI and WAT performance"
+      ],
+      "tuition": "₹23 00,000 for PGP",
+      "financial_aid": "Fellowships, scholarships",
+      "website": "https://www.iimb.ac.in"
+    },
+    {
+      "id": 11,
+      "name": "Vellore Institute of Technology",
+      "location": "Vellore, Tamil Nadu",
+      "type": "private",
+      "description": "VIT is a top-ranked private institution known for its engineering, technology and management programs with a focus on placements.",
+      "students": "35,000",
+      "acceptance_rate": 15,
+      "ranking": "#10 (NIRF Engineering)",
+      "popular_programs": ["Computer Science", "Electronics", "Mechanical", "Civil", "MBA"],
+      "admission_requirements": [
+        "VITEEE exam score",
+        "10+2 academics",
+        "Category certificates",
+        "Counselling rounds"
+      ],
+      "tuition": "₹3,00,000 per year",
+      "financial_aid": "Merit scholarships and educational loans",
+      "website": "https://www.vit.ac.in"
+    },
+    {
+      "id": 12,
+      "name": "Jamia Millia Islamia",
+      "location": "New Delhi, Delhi",
+      "type": "public",
+      "description": "Jamia Millia Islamia is a central university offering diverse programs in arts, social sciences, engineering, and law with strong research emphasis.",
+      "students": "20,000",
+      "acceptance_rate": 30,
+      "ranking": "#23 (NIRF Overall)",
+      "popular_programs": ["Journalism", "Law", "Architecture", "Engineering", "Social Sciences"],
+      "admission_requirements": [
+        "CUET UG/PG scores",
+        "10+2 or UG percentage",
+        "Entrance tests for some courses",
+        "Interviews (for select programs)"
+      ],
+      "tuition": "₹10,000–₹50,000 per year",
+      "financial_aid": "Scholarships for reserved categories and merit",
+      "website": "https://www.jmi.ac.in"
+    },
+    {
+      "id": 13,
+      "name": "Manipal Academy of Higher Education",
+      "location": "Manipal, Karnataka",
+      "type": "private",
+      "description": "MAHE (Manipal University) is a well‑known private institution offering wide-ranging programs in engineering, medicine, management, humanities, and more.",
+      "students": "28,000",
+      "acceptance_rate": 20,
+      "ranking": "#15 (NIRF Overall)",
+      "popular_programs": ["Medicine", "Pharmacy", "Engineering", "Architecture", "Management"],
+      "admission_requirements": [
+        "MET entrance exam",
+        "10+2 performance",
+        "Counselling by MAHE",
+        "Category certificates if applicable"
+      ],
+      "tuition": "₹2 00,000–₹5 00,000 per year (varies by program)",
+      "financial_aid": "Merit scholarships, education loans",
+      "website": "https://manipal.edu"
+    },
+    {
+      "id": 14,
+      "name": "Delhi Technological University",
+      "location": "Delhi, Delhi",
+      "type": "public",
+      "description": "DTU is a leading Delhi government university focusing on engineering, technology, and applied sciences with strong industry ties.",
+      "students": "15,000",
+      "acceptance_rate": 15,
+      "ranking": "#25 (NIRF Engineering)",
+      "popular_programs": ["Computer Science", "Electronics", "Mechanical", "Civil", "Information Technology"],
+      "admission_requirements": [
+        "JEE Main rank",
+        "Counseling via CSAB/Delhi CET",
+        "10+2 academic record",
+        "Category documentation"
+      ],
+      "tuition": "₹1,00,000 per year",
+      "financial_aid": "Central and state scholarships",
+      "website": "http://www.dtu.ac.in"
+    },
+    {
+      "id": 15,
+      "name": "Amity University Noida",
+      "location": "Noida, Uttar Pradesh",
+      "type": "private",
+      "description": "Amity Noida is a large private university offering a wide range of undergraduate and postgraduate programs, notable for its infrastructure and global collaborations.",
+      "students": "90,000",
+      "acceptance_rate": 40,
+      "ranking": "#50 (NIRF Overall)",
+      "popular_programs": ["Management", "Engineering", "Law", "Media & Communication", "Biotechnology"],
+      "admission_requirements": [
+        "Amity Entrance Exam (AEEE/ILET)",
+        "10+2 or equivalent",
+        "Interview for some courses",
+        "Counseling based on scores"
+      ],
+      "tuition": "₹2 00,000–₹4 00,000 per year",
+      "financial_aid": "Merit scholarships, educational loans",
+      "website": "https://www.amity.edu"
+    }
+  ]
+}

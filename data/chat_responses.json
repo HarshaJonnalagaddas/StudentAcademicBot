@@ -1,0 +1,92 @@
+{
+  "college_search": {
+    "keywords": ["college", "university", "school", "institution", "campus"],
+    "response": "I'd be happy to help you find the right college! 🎓 I can help you search for colleges based on location, programs, size, and more. What specific criteria are you looking for in a college? For example, are you interested in a particular field of study, geographic area, or type of institution (public vs private)?",
+    "suggestions": [
+      "Show me engineering colleges",
+      "What are the best colleges in California?",
+      "Find affordable colleges near me"
+    ]
+  },
+  "majors_career": {
+    "keywords": ["major", "career", "degree", "program", "study", "field"],
+    "response": "Choosing the right major is a crucial decision! 📚 I can help you explore different academic programs and career paths. Are you interested in a specific field like STEM, business, arts, or are you still exploring your options? I can also help you understand the connection between different majors and career opportunities.",
+    "suggestions": [
+      "What can I do with a computer science degree?",
+      "Help me choose between engineering majors",
+      "What are high-demand career fields?"
+    ]
+  },
+  "admissions": {
+    "keywords": ["admission", "requirements", "apply", "application", "gpa", "sat", "act"],
+    "response": "College admissions can seem overwhelming, but I'm here to help! 📝 I can guide you through admission requirements, application processes, standardized tests, and more. What specific aspect of college admissions would you like to know about? Are you wondering about requirements for specific schools, or do you need help with the application process in general?",
+    "suggestions": [
+      "What GPA do I need for top universities?",
+      "How important are SAT scores?",
+      "When should I start applying to colleges?"
+    ]
+  },
+  "financial_aid": {
+    "keywords": ["scholarship", "financial aid", "tuition", "cost", "money", "funding", "loan"],
+    "response": "College financing is an important consideration! 💰 There are many options available including scholarships, grants, work-study programs, and student loans. I can help you understand different types of financial aid and how to find funding opportunities. What specific financial questions do you have about college?",
+    "suggestions": [
+      "How do I apply for financial aid?",
+      "What scholarships are available for my major?",
+      "Compare costs of public vs private colleges"
+    ]
+  },
+  "study_tips": {
+    "keywords": ["study", "tips", "learning", "grades", "academic success", "homework"],
+    "response": "Great study habits are key to academic success! 📖 I can share effective study techniques, time management strategies, and tips for different learning styles. What specific areas would you like help with? Are you looking for general study tips, or do you need help with a particular subject or challenge?",
+    "suggestions": [
+      "Best study techniques for STEM subjects",
+      "How to manage time effectively",
+      "Tips for taking better notes"
+    ]
+  },
+  "test_prep": {
+    "keywords": ["sat", "act", "test prep", "standardized test", "exam"],
+    "response": "Standardized test preparation is crucial for college admissions! 📊 I can help you understand different tests (SAT, ACT, AP exams), provide study strategies, and suggest resources. Which test are you preparing for, or would you like help deciding between the SAT and ACT?",
+    "suggestions": [
+      "SAT vs ACT - which should I take?",
+      "Best SAT prep resources",
+      "How many times should I take the SAT?"
+    ]
+  },
+  "college_life": {
+    "keywords": ["college life", "campus", "dorm", "activities", "social"],
+    "response": "College life extends far beyond academics! 🏫 I can help you understand what to expect from campus life, including housing options, extracurricular activities, social opportunities, and how to make the most of your college experience. What aspects of college life are you most curious about?",
+    "suggestions": [
+      "What are the benefits of living on campus?",
+      "How to get involved in campus activities",
+      "Balancing academics and social life"
+    ]
+  },
+  "internships": {
+    "keywords": ["internship", "work experience", "job", "career preparation"],
+    "response": "Internships are valuable for gaining real-world experience! 💼 I can help you understand how to find internships, what to look for, and how they can benefit your career. Are you looking for internships in a specific field, or do you need general advice about the internship search process?",
+    "suggestions": [
+      "How to find internships in my field",
+      "What makes a good internship application?",
+      "When should I start looking for internships?"
+    ]
+  },
+  "graduate_school": {
+    "keywords": ["graduate school", "grad school", "masters", "phd", "doctorate"],
+    "response": "Graduate school can be a great way to advance your education and career! 🎓 I can help you understand different types of graduate programs, admission requirements, and whether graduate school is right for your goals. Are you considering a specific type of graduate program or field of study?",
+    "suggestions": [
+      "Do I need graduate school for my career?",
+      "MBA vs specialized master's degree",
+      "How to prepare for graduate school applications"
+    ]
+  },
+  "default": {
+    "response": "Hello! I'm your Academic Guidance Assistant. 🤖 I'm here to help you with college search, academic planning, career guidance, and much more! You can ask me about:\n\n• Finding the right college or university\n• Choosing a major or career path\n• College admissions and requirements\n• Financial aid and scholarships\n• Study tips and academic success\n• Test preparation (SAT, ACT)\n• College life and campus culture\n\nWhat would you like to know about your academic journey?",
+    "suggestions": [
+      "Help me find colleges",
+      "What major should I choose?",
+      "College admission requirements",
+      "Financial aid options"
+    ]
+  }
+}

@@ -1,0 +1,222 @@
+{
+  "study_guides": [
+    {
+      "title": "JEE Preparation Guide",
+      "description": "In-depth guide covering Physics, Chemistry, and Mathematics for JEE Main and Advanced with tips, strategies, and practice questions.",
+      "category": "Test Prep",
+      "icon": "fa-clipboard-check",
+      "duration": "12-24 weeks",
+      "difficulty": "Advanced",
+      "url": "https://www.embibe.com/exams/jee-main/"
+    },
+    {
+      "title": "College Application Essay Writing",
+      "description": "Step-by-step guide to writing compelling college application essays that stand out to admissions officers.",
+      "category": "Admissions",
+      "icon": "fa-pen-fancy",
+      "duration": "4-6 weeks",
+      "difficulty": "Intermediate",
+      "url": "https://www.commonapp.org/apply/essay-prompts"
+    },
+    {
+      "title": "Mathematics Study Guide",
+      "description": "Complete mathematics review covering algebra, geometry, trigonometry, and calculus fundamentals.",
+      "category": "Academics",
+      "icon": "fa-calculator",
+      "duration": "12-16 weeks",
+      "difficulty": "Advanced",
+      "url": "https://www.khanacademy.org/math"
+    },
+    {
+      "title": "Time Management for Students",
+      "description": "Learn effective time management techniques, study scheduling, and productivity tips for academic success.",
+      "category": "Study Skills",
+      "icon": "fa-clock",
+      "duration": "2-3 weeks",
+      "difficulty": "Beginner",
+      "url": "https://www.coursera.org/learn/learning-how-to-learn"
+    },
+    {
+      "title": "Science Laboratory Techniques",
+      "description": "Essential laboratory skills and safety procedures for chemistry, biology, and physics courses.",
+      "category": "STEM",
+      "icon": "fa-flask",
+      "duration": "6-8 weeks",
+      "difficulty": "Intermediate",
+      "url": "https://www.edx.org/learn/science"
+    },
+    {
+      "title": "Research and Citation Guide",
+      "description": "Learn proper research methods, source evaluation, and citation formats (APA, MLA, Chicago).",
+      "category": "Academic Writing",
+      "icon": "fa-search",
+      "duration": "3-4 weeks",
+      "difficulty": "Intermediate",
+      "url": "https://owl.purdue.edu/owl/research_and_citation/resources.html"
+    }
+  ],
+  "academic_tools": [
+    {
+      "title": "GPA Calculator",
+      "description": "Calculate your current GPA and see how future grades will impact your overall academic standing.",
+      "type": "Calculator",
+      "icon": "fa-calculator",
+      "features": [
+        "Semester and cumulative GPA calculation",
+        "Grade projection scenarios",
+        "Weighted and unweighted GPA support",
+        "Export and save calculations"
+      ],
+      "url": "https://www.calculator.net/gpa-calculator.html"
+    },
+    {
+      "title": "Study Schedule Planner",
+      "description": "Create personalized study schedules that adapt to your course load and learning preferences.",
+      "type": "Planner",
+      "icon": "fa-calendar-alt",
+      "features": [
+        "Customizable study blocks",
+        "Integration with calendar apps",
+        "Progress tracking",
+        "Reminder notifications"
+      ],
+      "url": "https://www.notion.so/templates/student-planner"
+    },
+    {
+      "title": "Citation Generator",
+      "description": "Automatically generate properly formatted citations for your research papers and assignments.",
+      "type": "Writing Tool",
+      "icon": "fa-quote-right",
+      "features": [
+        "Multiple citation formats (APA, MLA, Chicago)",
+        "Automatic metadata extraction",
+        "Bibliography organization",
+        "Export to various formats"
+      ],
+      "url": "https://www.easybib.com/"
+    },
+    {
+      "title": "Flashcard Creator",
+      "description": "Create digital flashcards with spaced repetition algorithms to optimize your learning and retention.",
+      "type": "Study Tool",
+      "icon": "fa-layer-group",
+      "features": [
+        "Spaced repetition algorithm",
+        "Image and audio support",
+        "Progress analytics",
+        "Sharing and collaboration"
+      ],
+      "url": "https://ankiweb.net/"
+    },
+    {
+      "title": "Pomodoro Timer",
+      "description": "Stay focused and productive with the proven Pomodoro Technique for studying and work sessions.",
+      "type": "Productivity",
+      "icon": "fa-stopwatch",
+      "features": [
+        "Customizable work/break intervals",
+        "Task tracking integration",
+        "Statistics and analytics",
+        "Background sounds and music"
+      ],
+      "url": "https://pomofocus.io/"
+    },
+    {
+      "title": "Grade Tracker",
+      "description": "Monitor your academic progress across all courses with detailed grade analysis and predictions.",
+      "type": "Academic Management",
+      "icon": "fa-chart-line",
+      "features": [
+        "Course-wise grade tracking",
+        "Weighted assignment categories",
+        "Grade predictions and scenarios",
+        "Progress visualization"
+      ],
+      "url": "https://gradebook.app/"
+    }
+  ],
+  "career_resources": [
+    {
+      "title": "Career Exploration Guide",
+      "description": "Discover career paths that align with your interests, skills, and values through comprehensive career assessments.",
+      "category": "Career Planning",
+      "icon": "fa-compass",
+      "topics": ["Career assessments", "Industry exploration", "Job market trends", "Skill requirements"],
+      "url": "https://www.mynextmove.org/"
+    },
+    {
+      "title": "Resume and Cover Letter Builder",
+      "description": "Create professional resumes and cover letters tailored to specific industries and job positions.",
+      "category": "Job Search",
+      "icon": "fa-file-alt",
+      "topics": ["Resume templates", "Cover letter writing", "Interview preparation", "Professional branding"],
+      "url": "https://www.resume.com/"
+    },
+    {
+      "title": "Internship Search Guide",
+      "description": "Find and secure valuable internship opportunities to gain practical experience in your field of interest.",
+      "category": "Experience",
+      "icon": "fa-briefcase",
+      "topics": ["Internship databases", "Application strategies", "Interview skills", "Professional networking"],
+      "url": "https://www.internships.com/"
+    },
+    {
+      "title": "LinkedIn Professional Development",
+      "description": "Build your professional network and personal brand through effective LinkedIn strategies and content creation.",
+      "category": "Networking",
+      "icon": "fa-linkedin",
+      "topics": ["Profile optimization", "Network building", "Content strategy", "Job searching"],
+      "url": "https://www.linkedin.com/learning/"
+    },
+    {
+      "title": "Salary Research and Negotiation",
+      "description": "Research market salaries for your field and learn effective negotiation strategies for job offers.",
+      "category": "Compensation",
+      "icon": "fa-dollar-sign",
+      "topics": ["Salary benchmarking", "Negotiation tactics", "Benefits evaluation", "Career progression"],
+      "url": "https://www.glassdoor.com/"
+    },
+    {
+      "title": "Industry Trends and Future Skills",
+      "description": "Stay ahead of industry changes and develop skills that will be in high demand in the future job market.",
+      "category": "Professional Development",
+      "icon": "fa-chart-line",
+      "topics": ["Emerging technologies", "Future job roles", "Skill development", "Continuous learning"],
+      "url": "https://www.coursera.org/browse/data-science"
+    }
+  ],
+  "faq": [
+    {
+      "question": "How do I choose the right college major?",
+      "answer": "Choosing a major involves considering your interests, strengths, career goals, and market demand. Start by taking career assessments, researching different fields, talking to professionals, and considering your long-term goals. Remember that many successful people change careers, so your major doesn't necessarily limit your future options."
+    },
+    {
+      "question": "What GPA do I need for college admission?",
+      "answer": "GPA requirements vary significantly by institution. Highly competitive schools typically require 3.8+ GPAs, while many good colleges accept students with 3.0-3.5 GPAs. However, admissions are holistic - test scores, extracurriculars, essays, and recommendations also matter significantly."
+    },
+    {
+      "question": "When should I start preparing for college applications?",
+      "answer": "Ideally, start planning in 9th grade by taking challenging courses and getting involved in activities. Begin serious preparation in 11th grade, including standardized test prep and college research. Start applications in the summer before senior year, with deadlines typically between November and January."
+    },
+    {
+      "question": "How can I make college more affordable?",
+      "answer": "Consider in-state public universities, community colleges for first two years, merit scholarships, need-based financial aid, work-study programs, and applying to schools known for generous aid. Complete the FAFSA early and research scholarship opportunities specific to your background or interests."
+    },
+    {
+      "question": "What's the difference between the SAT and ACT?",
+      "answer": "The SAT focuses more on reasoning and problem-solving, while the ACT is more curriculum-based. The SAT has sections in Math, Reading, and Writing & Language, while the ACT includes English, Math, Reading, Science, and an optional Writing section. Most colleges accept both, so choose based on your strengths."
+    },
+    {
+      "question": "How important are extracurricular activities?",
+      "answer": "Extracurriculars are very important for competitive colleges as they demonstrate leadership, commitment, and interests beyond academics. Quality matters more than quantity - showing sustained involvement and leadership in a few activities is better than minimal participation in many."
+    },
+    {
+      "question": "Should I take AP or dual enrollment classes?",
+      "answer": "Both can be beneficial. AP classes are standardized and widely recognized, with the potential for college credit through exams. Dual enrollment provides actual college credits and experience. Choose based on availability, your learning style, and how well the courses align with your academic goals."
+    },
+    {
+      "question": "What should I do if I'm unsure about my career path?",
+      "answer": "It's normal to be unsure! Take career assessments, explore different fields through internships or job shadowing, talk to professionals in various industries, and consider a liberal arts education that provides broad skills. Many successful people changed careers multiple times."
+    }
+  ]
+}
