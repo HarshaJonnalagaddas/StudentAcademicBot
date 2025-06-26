@@ -139,6 +139,16 @@ The application operates in two modes:
    - Static college search
    - Basic functionality
 
+## Project Snaps
+
+![image](https://github.com/user-attachments/assets/bf48ed97-c168-472e-976b-fbf16a792229)
+
+![image](https://github.com/user-attachments/assets/8a505f1c-8627-49cd-8b55-7459ba29ca85)
+
+![image](https://github.com/user-attachments/assets/98cef1dd-a58a-4af7-afcd-1378cdf52f64)
+
+![image](https://github.com/user-attachments/assets/2a7c59a0-d788-4b22-b1b0-c990637858f4)
+
 ## Usage
 
 1. **Chat Interface**: Ask questions about colleges, majors, career paths, study tips, etc.
